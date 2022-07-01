@@ -41,7 +41,7 @@ export const ProductSlider = () => {
                                 </div>
 
                             <div className='font-semibold lg:text-xl '>{name}</div>
-                            <div className="flex items-center gap-x-3">
+                            <div className="flex items-center gap-x-[2rem] md:gap-x-3">
                             <div>${price}</div>
                             <div className='text-[15px] text-grey'>${oldPrice}</div>
                             </div>
