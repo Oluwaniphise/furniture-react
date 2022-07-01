@@ -28,7 +28,7 @@ export const ProductSlider = () => {
                     {page.productList.map((product, index) =>{
                         const {image, name, price, oldPrice } = product;
                         return (
-                            <div className='w-full max-w-[290px] h-[380px] text-left ' key={index}>
+                            <div className='w-full mb-[50px] max-w-[290px] h-[380px] text-left ' key={index}>
                                 <div className='border rounded-[18px] max-w-[285px] h-full max-h-[292px]
                                  hover:border-accent flex items-center justify-center mb-[15px] relative transition'>
                                 <img src={image.type} alt="" />
