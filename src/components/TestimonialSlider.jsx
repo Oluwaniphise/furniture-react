@@ -11,7 +11,7 @@ import '../slider.css';
 export const TestimonialSlider = () => {
   return (
     <Swiper className='testimonialSlider'
-    modules={[Navigation, Autoplay]} navigation={true}>
+    modules={[Navigation, Autoplay]} autoplay={true} navigation={true}>
       {testimonial.persons.map((person, index) =>{
           const {avatar, name, occupation, message} = person;
         return (
@@ -21,18 +21,15 @@ export const TestimonialSlider = () => {
               <img src={avatar.type} alt="" />
 
               <div>
-              <div>{name}</div>
-              <div>{occupation}</div>
+              <div className='text-xl font-semibold'>{name}</div>
+              <div className='text-gray-500'>{occupation}</div>
 
               </div>
               </div>
  
-              {message}
+              <p className='text-xl max-w-[570px]'>{message}</p>
            
               </div>
-           
-            
-            
 
           </SwiperSlide>
         )
